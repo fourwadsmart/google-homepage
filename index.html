@@ -6,56 +6,63 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <nav>            
-            <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#">Google Apps (Grid)</a></li>
-                <li><a href="#">Google Notifictions (Bell)</a></li>
-                <li><a href="#">Google Account</a></li>
-            </ul>
-        </nav>
         
-        <header>
-            
-            <div>
-                <input type="text">
-                <span></span>
-            </div>
-            
-            <div>
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
-            
-        </header>
-        
-        <footer>
-            
-            <div>
-                <p>Dominican Republic</p>
-            </div>
-            
-            <div>
-                <ul>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">About</a></li>
+        <div id="body">
+           <nav class="top-nav">            
+                <ul class="top-nav__list">
+                    <li class="top-nav__list__item"><a href="#">Gmail</a></li>
+                    <li class="top-nav__list__item"><a href="#">Images</a></li>
+                    <li class="top-nav__list__item"><a href="#">Google Apps (Grid)</a></li>
+                    <li class="top-nav__list__item"><a href="#">Google Notifictions (Bell)</a></li>
+                    <li class="top-nav__list__item"><a href="#">Google Account</a></li>
                 </ul>
+            </nav>
+
+            <div class="main">
+
+                <div class="main__logo">
+                    <img src="assets/google_logo.png" alt="google logo" width="25%">
+                </div>
+
+                <div class="main__input">
+                    <input type="text" class="main__search-bar">
+                    <span class="main__microphone-ico"></span>
+                </div>
+
+                <div class="main__btn">
+                    <button class="main__search-btn">Google Search</button>
+                    <button class="main__search-btn">I'm Feeling Lucky</button>
+                </div>
+
             </div>
-            
-            <div>
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </div>
-            
-        </footer>
+
+            <footer class="footer">
+
+                <div class="footer__location">
+                    <p>Dominican Republic</p>
+                </div>
+
+                <div class="footer__menu footer__left-menu">
+                    <ul class="footer__left-menu__list">
+                        <li class="footer__left-menu__list__item"><a href="#">Advertising</a></li>
+                        <li class="footer__left-menu__list__item"><a href="#">Business</a></li>
+                        <li class="footer__left-menu__list__item"><a href="#">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__menu footer__right-menu">
+                    <ul class="footer__right-menu__list">
+                        <li class="footer__right-menu__list__item"><a href="#">Privacy</a></li>
+                        <li class="footer__right-menu__list__item"><a href="#">Terms</a></li>
+                        <li class="footer__right-menu__list__item"><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
         
         <script src="script/jquery-3.2.1.min.js"></script>
-        <scrcipt src="script/main.js"></scrcipt>
+        <script src="script/main.js"></script>
         
     </body>
 </html>
