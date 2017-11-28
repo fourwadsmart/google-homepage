@@ -1,3 +1,13 @@
+/************************************************************
+***                                                       ***
+***  CSS using the BEM methodology. BEM stands for Block  ***
+***  Element Modifier. It's a popular and great concept   ***
+***  for creating CSS architecture.                       ***
+***  Link: http://getbem.com/introduction/                ***
+***                                                       ***
+*************************************************************/
+
+
 * {
     box-sizing: border-box;
     font-family: arial;
@@ -84,16 +94,19 @@
     height: 40px;
     padding: 5px 15px;
     border: 2px solid #DCDCDC;
-    border-radius: 2px;
+    border-radius: 5px;
     transform: translateY(18vh);
+    outline: none;
 }
 
 .main__microphone-ico {
-    position: absolute;
+    position: relative;
     display: inline-block;
+    float: right;
     width: 14px;
     height: 20px;
-    transform: translateY(12vh);
+    transform: translateY(18vh);
+    top: -40px;
     right: 0;
     margin: 10px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAMAAACK2/weAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACylBMVEVChfQAAAD/vQD/1wD/IQDtQjEhkf/SAIOUjIyNWqKQZ5z9zADqQzX8wwDzhhvlHkPqQzXhAEz/DiXpRDXpQzX/HSrbAF1ChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfRChfShoXlNiOZChfRChfRChfRChfRChfRMgemYY5LyuRGmo3P/0QBChfRChfRChfRChfT/KQCcYo7iRj6jAHVDhfRChfRChfRDhPSJrf/7vAbyuRD//wA5gvdChfRChfRChfRChfQ6iPf/AADiRj7qQzX7vAX6vAb8wAQiX+5DhfNChfRChfRChfRChfRDhfMso+vxPyrpQzbqQzX7vAX0uQ7/AABHhu5Hg+7lRTvqQzX7vAX6uwZjj8lGhPBDhfNDhfNGg+9Wfd2cYo3pQzbqQzX7vQX7vQXyeSAA//8A////AADqQzXqQzXqQzX9zgDyfR7qRDXkRjzjSDHkRzHkRTvpQzbqQzXqQzXxciLnLj3qQjXvQDTvQDTqQzXqQzXqQzX1jhXpRTXrQzXmRTbTUDnVTznnRTbqQzXpQzXqQzXxeCHnRTUAyV01p1M3plMTulnnRDXqQzXqRDUAzV2HekXpRDU9o1IzqVMzqVM4pVLpRDWNd0QLv1rqQzU+o1E7pFLwQDQ2p1M0qFM0qFM2p1PtQTQ7pFI/olFChfT7vAVChfRChfRChfRChfTqQzX7vAXqQzX8wAPqQzXpPzfqQzXqQzXrQzXrQzXqQzX///8HH1MlAAAA3HRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQSE6OmGBQEBAAJ//v6BAgAAAAEACeD9/P394QoAAQAAARTk//39/+UVAQABEuP95BQBARPk/f3lFAEAARPk/eQTAQABAgAT5OQTAAIBABPj5BMAExMBEuT//+QTABMT0tsZBeH8+/v84QUb29HURwCGh1LRfa8HhN3dhQcDvXoZ44ACAgCR4hlM+bVOHBxRuvtOAkna9PTgUAICFG25/P3BdhkDAAIS5ucVAgAAAAIDGOfpGQMCAAAAAQAW4+UYAAEACWwfrgAAAAFiS0dE7Va+g40AAAAHdElNRQfhCxoVKRuNdtPxAAABN0lEQVQY0wEsAdP+AAAXGBkaGxwdHh8gISIAAAAXIwAk3CUm3CcAKCkqACssLS4vMDEyMzQ1Njc4ADk6ADs8PT4/QEFCAEM5AERFF0ZH3Eg+3ElKF0tEAERMAU1O3E9Q3FFSAVNEAFRVAVZX3E9Y3FlaAVtcAF1eX2Bh3E8+3GJjZGVmAAIDZ2hp3EhP3GprbAQFAG1ub3BxcjA/c3R1dnd4AHl6e3x9fn+AgYKDhIWGAIfdiImK3t/g4YsGjOKNAI7jjweQkZKTlJWWl+SYAJma5ZsICZydCp6f5qChAAuio+ekpaanqKnoqqsMAKwNra7p6q+w6+yxsgyzAA60D7W2t7i5uru8EL0MAL4RvxITwMHCwxQVxAzFABbGx8jJysvMzc7P0NEMAAwM0tPU1dbX2Nna2wwMZ0F6gB2M4CsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMTEtMjZUMjE6NDE6MjctMDU6MDAvbgz6AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTExLTI2VDIxOjQxOjI3LTA1OjAwXjO0RgAAAABJRU5ErkJggg==);
@@ -119,8 +132,12 @@
     font-family: arial;
     color: dimgray;
     background-color: ghostwhite;
+    outline: none;
     
-    
+}
+
+.main__search-btn:hover {
+    cursor: pointer;
 }
 
 .main__search-btn:nth-last-child(1) { float: right; }
@@ -131,30 +148,40 @@
     width: 100vw;
     height: 150px;
     background: ghostwhite;
+    border-bottom: 1px solid darkslategray;
 }
 
 .footer__location {
     width: inherit;
     height: 2rem;
     padding: 20px;
+    padding-left: 10px;
     font-size: .95em;
     font-family: arial;
     color: darkslategray;
 }
 
-.footer__location p {  }
+.footer__location p {
+    position: inherit;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
 
 .footer__menu {
     position: inherit;
     display: inline-block;
     margin: 0 auto;
+    top: 15px;
+    bottom: 5px;
 }
 
 .footer__menu li {
     position: inherit;
     display: inline-block;
     height: 20px;
-    padding: 50px 10px 20px;
+    padding: 20px 10px;
     color: darkslategray;
     font-size: .9em;
 }
@@ -173,10 +200,14 @@
 }
 
 .footer__left-menu__list {
-    
+    padding: 0;
 }
 
-.footer__left-menu__list li { }
+.footer__left-menu__list li {
+    position: relative;
+
+}
+
 .footer__left-menu__list li a { }
 .footer__left-menu__list__item { }
 
